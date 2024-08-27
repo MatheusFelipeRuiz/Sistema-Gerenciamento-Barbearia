@@ -27,9 +27,5 @@ class Service extends Model
             'description'  => ['required','max:2000'],
             'price'        => ['required','numeric','gt:0']
         ];
-
-
     }
-
-
 }
