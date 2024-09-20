@@ -30,7 +30,7 @@
                         <td class='text-wrap'>{{ $service->name }}</td>
                         <td>R$ {{ number_format($service->price, 2, ',', '.') }} reais</td>
                         <td>{{ $service->duration }} min</td>
-                        <td class="text-center"><a href="" class="btn btn-primary">Editar</a></td>
+                        <td class="text-center"><a href="{{ route('services.edit',['service' => $service]) }}" class="btn btn-primary">Editar</a></td>
                         <td class="text-center"><a href="" class="btn btn-danger">Deletar</a></td>
                     </tr>
                 @endforeach

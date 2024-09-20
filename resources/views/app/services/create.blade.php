@@ -9,7 +9,11 @@
         </div>
         <div class='row justify-content-center'>
             <div class='col-6'>
-                @component('app.services._components.form_create_edit',['type' => $type])
+                @component('app.services._components.form_create_edit', [
+                    'modalName' => $modalName,
+                    'modalTitle' => $modalTitle,
+                    'modalMessage' => $modalMessage,
+                ])
                 @endcomponent
             </div>
         </div>

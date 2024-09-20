@@ -1,5 +1,20 @@
 const IP_PRICE = document.getElementById('price');
 const IP_DURATION = document.getElementById('duration');
+const formataNumeroPreco = (numero) => {
+    console.log(numero);
+
+	const price = Number(numero).toFixed(2).split('.');
+	const numbers = price[0];
+	const decimals = price[1] > 0 && price[1] < 9 ? price[1] + '0' : price[1];
+	const formatedValue = 'R$ ' + numbers + ',' + decimals;
+
+	return formatedValue;
+};
+
+window.addEventListener('load', function () {
+	IP_PRICE.value = formataNumeroPreco(IP_PRICE.value);
+	IP_DURATION.dispatchEvent(new Event('input'));
+});
 
 IP_PRICE.addEventListener('input', function () {
 	let priceValue = this.value.replace(/[^\d]/g, '');
@@ -14,5 +29,3 @@ IP_DURATION.addEventListener('input', function () {
 	let formatedValue = durationValue + ' min';
 	this.value = formatedValue;
 });
-
-
