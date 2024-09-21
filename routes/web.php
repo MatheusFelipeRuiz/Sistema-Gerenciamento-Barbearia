@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\UserController;
+use App\Mail\MensagemMail;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +18,20 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+})->name('home');
+
+Route::resources([
+    'users'    => UserController::class,
+    'services' => ServiceController::class
+]);
+
+Auth::routes(['verify' => true]);
+
+Route::get('/mail', function () {
+    return new MensagemMail();
 });
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')
+->middleware('verified')
+;

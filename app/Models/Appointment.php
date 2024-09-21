@@ -15,10 +15,9 @@ class Appointment extends Model
      * @var array
      */
     protected $fillable = [
-        'client_id',
+        'customer_id',
         'employee_id',
         'service_id',
-        'price',
         'status',
     ];
 

@@ -18,14 +18,21 @@ class Service extends Model
         'name',
         'description',
         'price',
+        'duration',
+        'created_by',
     ];
 
     public function rules()
     {
         return [
-            'name'         => ['required','min:3','max:200'],
-            'description'  => ['required','max:2000'],
-            'price'        => ['required','numeric','gt:0']
+            'name'         => ['required', 'min:3', 'max:200'],
+            'description'  => ['required', 'max:2000'],
+            'price'        => ['required', 'numeric', 'gt:0']
         ];
+    }
+
+    public function createdByUser()
+    {
+        return $this->belongsTo(User::class);
     }
 }
