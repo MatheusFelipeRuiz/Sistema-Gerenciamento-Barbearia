@@ -1,7 +1,6 @@
 const IP_PRICE = document.getElementById('price');
 const IP_DURATION = document.getElementById('duration');
 const formataNumeroPreco = (numero) => {
-    console.log(numero);
 
 	const price = Number(numero).toFixed(2).split('.');
 	const numbers = price[0];

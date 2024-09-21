@@ -5,31 +5,26 @@
         <div class="container p-4 pb-0">
             <!-- Section: Social media -->
             <section class="mb-4">
-                <!-- Facebook -->
-                <a data-mdb-ripple-init class="btn link-footer btn-dark m-1" href="#!" role="button"><i
-                        class="bi bi-facebook"></i></a>
-                <!-- Twitter -->
-                <a data-mdb-ripple-init class="btn link-footer text-white btn-floating m-1" href="#!" role="button">
-                    <i class="bi bi-twitter"></i>
-                </a>
                 <!-- Google -->
-                <a data-mdb-ripple-init class="btn link-footer text-white btn-floating m-1" href="#!"
+                <a data-mdb-ripple-init class="btn link-footer text-white btn-floating m-1"
+                    href="https://outlook.live.com/mail/0/deeplink/compose?to=matheus57.ruiz100@outlook.com"
                     role="button">
-                    <i class="bi bi-google"></i>
+                    <i class="bi bi-envelope-at"></i>
                 </a>
                 <!-- Instagram -->
-                <a data-mdb-ripple-init class="btn link-footer text-white btn-floating m-1" href="#!"
-                    role="button">
+                <a data-mdb-ripple-init class="btn link-footer text-white btn-floating m-1"
+                    href="https://www.instagram.com/matheusfrg/" target="_blank" role="button">
                     <i class="bi bi-instagram"></i>
                 </a>
                 <!-- Linkedin -->
-                <a data-mdb-ripple-init class="btn link-footer text-white btn-floating m-1" href="#!"
+                <a data-mdb-ripple-init class="btn link-footer text-white btn-floating m-1"
+                    href="https://www.linkedin.com/in/matheus-felipe-ruiz-gon%C3%A7alves-ti/" target="_blank"
                     role="button">
                     <i class="bi bi-linkedin"></i>
                 </a>
                 <!-- Github -->
-                <a data-mdb-ripple-init class="btn link-footer text-white btn-floating m-1" href="#!"
-                    role="button">
+                <a data-mdb-ripple-init class="btn link-footer text-white btn-floating m-1"
+                    href="https://github.com/MatheusFelipeRuiz" target="_blank" role="button">
                     <i class="bi bi-github"></i>
                 </a>
             </section>
